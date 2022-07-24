@@ -1,0 +1,26 @@
+<div class="container">
+
+
+  <ng-template #noDigimons>
+    <p>Récupération des Departements en cours...</p>
+  </ng-template>
+  
+  
+  <table class="table table-striped table-hover bg-info">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>code</th>
+        <th>Code Regions</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="arrayDepartements.length > 0; else noDigimons" >
+      <tr *ngFor="let dep of arrayDepartements">
+        <td>{{dep.nom}}</td>
+        <td>{{dep.code}}</td>
+        <td>{{dep.codeRegion}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  

@@ -1,5 +1,8 @@
 export class UrlApi {
 
-    // static rawUrl: string = 'https://pokeapi.co/api/v2';
-    // static pokedexUrl: string = UrlApi.rawUrl + '/pokemon?offset=0&limit=20';
+    // POUR LES REGIONS
+    static rawUrlReg: string = 'https://geo.api.gouv.fr/regions';
+
+    // POUR LES DEPARTEMENTS
+    static rawUrlDep: string = 'https://geo.api.gouv.fr/departements ';
 }

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// j'importe ici mes components créer
+import { DepartemementComponent } from './departemement/departemement.component';
+import { RegionsComponent } from './regions/regions.component';
 
 const routes: Routes = [
-  // je met ici les routes
-  // {path: "", component: }
+  {path: "region", component: RegionsComponent},
+  {path: 'departement', component: DepartemementComponent}
 ];
 
 @NgModule({

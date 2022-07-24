@@ -1,0 +1,24 @@
+<div class="container">
+
+
+    <ng-template #noDigimons>
+      <p>Récupération des Regions en cours...</p>
+    </ng-template>
+    
+    
+    <table class="table table-striped table-hover bg-info">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>code</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="arrayRegions.length > 0; else noDigimons" >
+        <tr *ngFor="let region of arrayRegions">
+          <td>{{region.nom}}</td>
+          <td>{{region.code}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
